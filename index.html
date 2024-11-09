@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gray: {
+                700: "#333333",
+                800: "#1F1F1F",
+                900: "#141414",
+              },
+              green: "#C4F82A",
+              white: "#FFFFFF",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            fontSize: {
+              "text-preset-1": [
+                "24px",
+                {
+                  lineHeight: "150%",
+                  letterSpacing: "0px",
+                  fontWeight: "600",
+                },
+              ],
+              "text-preset-2": [
+                "14px",
+                {
+                  lineHeight: "150%",
+                  letterSpacing: "0px",
+                  fontWeight: "300",
+                },
+              ],
+              "text-preset-2-bold": [
+                "14px",
+                {
+                  lineHeight: "150%",
+                  letterSpacing: "0px",
+                  fontWeight: "700",
+                },
+              ],
+            },
+            spacing: {
+              500: "40px",
+              300: "24px",
+              200: "16px",
+              150: "12px",
+              100: "8px",
+              50: "4px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Social links profile</title>
+  </head>
+  <body
+    class="h-screen bg-gray-900 flex flex-col items-center justify-center font-sans"
+  >
+    <main
+      class="bg-gray-800 flex flex-col items-center p-300 rounded-xl w-[327px] md:w-[456px] lg:w-[384px] gap-y-300"
+    >
+      <img
+        class="w-[88px] h-[88px] rounded-full"
+        src="assets/images/avatar-jessica.jpeg"
+        alt=""
+      />
+      <div class="gap-y-50 text-center">
+        <h1 class="text-text-preset-1 text-white">Jessica Randall</h1>
+        <h2 class="text-text-preset-2-bold text-green">
+          London, United Kingdom
+        </h2>
+      </div>
+      <h3 class="text-white text-text-preset-2">
+        "Front-end developer and avid reader."
+      </h3>
+      <section class="flex flex-col gap-y-200 w-full">
+        <button
+          class="bg-gray-700 rounded-lg text-white text-text-preset-2-bold py-150"
+        >
+          GitHub
+        </button>
+        <button
+          class="bg-gray-700 rounded-lg text-white text-text-preset-2-bold py-150"
+        >
+          Frontend Mentor
+        </button>
+        <button
+          class="bg-gray-700 rounded-lg text-white text-text-preset-2-bold py-150"
+        >
+          LinkedIn
+        </button>
+        <button
+          class="bg-gray-700 rounded-lg text-white text-text-preset-2-bold py-150"
+        >
+          Twitter
+        </button>
+        <button
+          class="bg-gray-700 rounded-lg text-white text-text-preset-2-bold py-150"
+        >
+          Instagram
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
